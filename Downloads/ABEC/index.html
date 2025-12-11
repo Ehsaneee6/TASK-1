@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="apec_icon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="icon" href="../img/apec_icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Premium Feedback</title>
+
+  <style>
+  body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+    .myclass {
+      margin-left: 25px;
+      margin-right: 30px;
+      padding: 8px;
+    }
+    #wpref {
+      background: none;
+      color: white;
+      height: 90px;
+    }
+    
+    #members {
+      display: none;
+      width: 100%;
+    }
+    #forrms{
+    font-family: Arial, sans-serif;
+    color: #000;
+    border-radius: 75px 7px 75px 7px;
+
+}
+    .myclass textarea {
+  color: black !important; 
+  background-color: white !important; 
+}
+.btn-red {
+    background-color:  rgb(173, 9, 9) ; 
+    border-color:  rgb(173, 9, 9) ;
+    color: white ;
+  }
+  
+  .btn-red:hover {
+    background-color:  rgba(173, 9, 9, 0.744) ;
+    border-color:  rgba(173, 9, 9, 0.737) ;
+  }
+ 
+   .select2-container .select2-results__options {
+      max-height: 150px; /* Set max height for scrollable dropdown */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+   
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container mt-4">
+    <div class="d-flex justify-content-center align-items-center" id="logoos">
+        <div class="me-3">
+          <img src="apecLogo.png" class="l1" style="width:80px;height:80px;">
+        </div>
+        <div>
+          <img src="APEC1.png" class="l2" style="width:200px;height:70px;">
+        </div>
+      </div>
+      
+
+    <div class="text-center my-4">
+      <h1 class="heading1">APEC'25 <span class="heading2">Premium</span></h1>
+      <h1 class="heading1">Ushering & Registration <span class="heading2">Feedback</span></h1>
+    </div>
+
+    <div class="card shadow p-4" id="forrms">
+      <form action="submit_Feedback" method="POST" enctype="multipart/form-data">
+        <div class="form-group myclass">
+          <!--<label for="name">Ushering member name?</label>-->
+           <label for="searchable-dropdown">Ushering member name:</label>
+              <select id="searchable-dropdown" size="5" class="form-control mt-2"  name="name">
+    
+            <optgroup label="PR">
+              <option value="Abdelrahman-Elshazly">Abdelrahman Elshazly</option>
+              <option value="Shimaa_Zayed">Shimaa Zayed</option>
+              <option value="Ahmed_Loay">Ahmed Loay</option>
+              <option value="Mennatallah-Shaheen">Mennatallah Shaheen</option>
+              <option value="Jana-Kassem">Jana Kassem</option>
+              <!--<option value="Farah-Samy">Farah Samy</option>-->
+              <option value="Menna-Tarek">Menna Tarek</option>
+              <option value="Mariam_PR">Mariam</option>
+              <option value="Habiba_PR">Habiba</option>
+              <option value="Mohamed__Nader">Mohamed Nader</option>
+            </optgroup>
+            <optgroup label="IT">
+              <option value="Aya-Gamal">Aya Gamal</option>
+              <option value="Omar-Hossam">Omar Hossam </option>
+              <option value="Verina-Erian">Verina Erian</option>
+              <option value="Alya-Essam">Alya Essam</option>
+              <option value="Hamza-Alabiad">Hamza Alabiad</option>
+              <option value="Mark-Amir">Mark Amir</option>
+              <option value="Mohamad-Safey-Eldeen">Mohamad Safey Eldeen</option>
+              <option value="Salma-Alzahdy">Salma Alzahdy</option>
+              <option value="Youssef-Ahmed">Youssef Ahmed</option>
+              <option value="Ziad-Alaa">Ziad Alaa</option>
+              <option value="Mahmoud-Mostafa">Mahmoud Mostafa</option>
+              <option value="Mariam-Khaled">Mariam Khaled</option>
+            </optgroup>
+            <optgroup label="PM">
+              <option value="Naira-Yousri">Naira Yousri</option>
+              <option value="Nourhan-Mohammed">Nourhan Mohammed</option>
+              <option value="Lujain-Abubaker">Lujain Abubaker</option>
+              <option value="Engy-Elkady">Engy Elkady</option>
+              <option value="Mohamed-Abdalkarem">Mohamed Abdalkarem </option>
+              <!--<option value="Yousef_Mohamed">Yousef Mohamed</option>-->
+              <option value="Omar-Yasser">Omar Yasser </option>
+              <!--<option value="Youssef_Gerges">Youssef Gerges</option>-->
+              <option value="Abdelrahman_Khaled">Abdelrahman Khaled</option>
+              <option value="Youssef*Khaled_Gomaa">Youssef Khaled Gomaa</option>
+              <option value="Khaled-Abdelmonem">Khaled Abdelmonem </option>
+              <option value="Omar_Hany">Omar Hany</option>
+            </optgroup>
+            <optgroup label="FR">
+              <option value="Adham-Nasreldin">Adham Nasreldin</option>
+              <option value="Ahmed-Negm">Ahmed Negm</option>
+              <option value="Nada-Mohamed">Nada Mohamed</option>
+              <!--<option value="Habiba-Shepl">Habiba Shepl</option>-->
+              <option value="Mohamed_Lotfy">Mohamed Lotfy</option>
+              <!--<option value="Mina-Sameh">Mina Sameh</option>-->
+              <option value="Moaaz-Zakaria">Moaaz Zakaria</option>
+              <option value="Youssef--Farid">Youssef Farid</option>
+            </optgroup>
+            <!--<optgroup label="HR">-->
+            <!--  <option value="Moaz_Ebrahim">Moaz Ebrahim</option>-->
+            <!--  <option value="Abdullah-Zarea">Abdullah Zarea</option>-->
+            <!--  <option value="Kareem-Bahei">Kareem Bahei</option>-->
+            <!--  <option value="Merehan-Ashraf">Merehan Ashraf </option>-->
+            <!--  <option value="Alaa_Taher">Alaa Taher </option>-->
+            <!--  <option value="Ahmed__Ashraf">Ahmed Ashraf </option>-->
+            <!--  <option value="Mostafa_Hussein">Mostafa Hussein</option>-->
+            <!--  <option value="Omar__Hossam">Omar Hossam </option>-->
+            <!--</optgroup>-->
+            <optgroup label="LR">
+              <!--<option value="Ahmed--Hosny">Ahmed Hosny</option>-->
+              <option value="Hager-Mohamed">Hager Mohamed</option>
+              <option value="Mostafa-Elhassany">Mostafa Elhassany</option>
+              <option value="AbdElrahman--Mahmoud">AbdElrahman Mahmoud</option>
+              <option value="Sarah-Wael">Sarah Wael </option>
+              <option value="Abdelrahman-_Ismail">Abdelrahman Ismail</option>
+              <option value="Amr-Khaled">Amr Khaled</option>
+              <option value="Muhammad-Awwad">Muhammad Awwad</option>
+              <option value="Mahmoud--Mokhtar">Mahmoud Mokhtar</option>
+              <option value="Salma_Talaat">Salma Talaat</option>
+              <option value="Ahmed_Mahmoud">Ahmed Mahmoud</option>
+            </optgroup>
+            <optgroup label="MM">
+              <option value="Omar_-Elserafi">Omar Elserafi</option>
+              <option value="Menna_Dewidar">Menna Dewidar</option>
+              <option value="Judy-Ibrahim">Judy Ibrahim</option>
+              <option value="Hoda-Reda">Hoda Reda</option>
+              <option value="Roaa-Mohamed">Roaa Mohamed</option>
+              <option value="Shorouq-Ehab">Shorouq Ehab</option>
+              <!--<option value="Hana-Tamer">Hana Tamer</option>-->
+              <option value="Mustafa-El-sayed">Mustafa El-sayed</option>
+              <option value="Menna__Mansour">Menna Mansour</option>
+              <option value="Mahmoud-_Hazem">Mahmoud Hazem</option>
+              <option value="Daila-Mohamed">Daila Mohamed</option>
+              <option value="Odiet_MM">Odiet</option>
+              <option value="Abdelrahman__Waheed">Abdelrahman Waheed</option>
+              <option value="Nour__MM">Nour</option>
+            </optgroup>
+    </select>
+   
+        </div>
+
+          <div class="form-group myclass" id="facultydiv">
+            <label for="faculty">How did you find the ushering member's communication skills?</label>
+            <select class="form-control form-control-sm" id="faculty" name="Ushering" onchange="displayDivDemo('hideValuesOnSelect', this)" required>
+              <option value="" style="color:black;" hidden>Choose</option>
+              <option value="Excellent" style="color:black;">Excellent</option>
+              <option value="Very Good" style="color:black;">Very Good</option>
+              <option value="Good" style="color:black;">Good</option>
+              <option value="Fair" style="color:black;">Fair</option>
+              <option value="Weak" style="color:black;">Weak</option>
+            </select>
+          </div>
+          <div class="myclass" id = "facultydiv" >
+            <label for="faculty">Was all the information explained clearly?</label>
+            <select class = "form-control form-control-sm" id="faculty" name="Information" onchange="displayDivDemo('hideValuesOnSelect', this)" required>
+            <option value="" selected style="color:black;" hidden>Choose</option>
+            <option value="Excellent" style="color:black;">Excellent</option>
+            <option value="Very Good" style="color:black;">Very Good</option>
+            <option value="Good" style="color:black;">Good</option>
+            <option value="Fair" style="color:black;">Fair</option>
+            <option value="Weak" style="color:black;">Weak</option>
+          </select>
+        </div>
+        
+        <div class="myclass" id = "facultydiv" >
+            <label for="faculty">Was the ushering member friendly?</label>
+            <select class = "form-control form-control-sm" id="faculty" name="Friendly" onchange="displayDivDemo('hideValuesOnSelect', this)" required>
+            <option value="" selected style="color:black;" hidden>Choose</option>
+            <option value="Excellent" style="color:black;">Excellent</option>
+            <option value="Very Good" style="color:black;">Very Good</option>
+            <option value="Good" style="color:black;">Good</option>
+            <option value="Fair" style="color:black;">Fair</option>
+            <option value="Weak" style="color:black;">Weak</option>
+          </select>
+        </div>
+        
+        <div class="myclass" id = "facultydiv" >
+            <label for="faculty">How did you find the flyer's content? </label>
+            <select class = "form-control form-control-sm" id="faculty" name="Flyer" onchange="displayDivDemo('hideValuesOnSelect', this)" required>
+            <option value="" selected style="color:black;" hidden>Choose</option>
+            <option value="Excellent" style="color:black;">Excellent</option>
+            <option value="Very Good" style="color:black;">Very Good</option>
+            <option value="Good" style="color:black;">Good</option>
+            <option value="Fair" style="color:black;">Fair</option>
+            <option value="Weak" style="color:black;">Weak</option>
+          </select>
+        </div>
+        
+      <div class="myclass" id = "facultydiv" >
+            <label for="faculty">How satisfied are you with the registration process?  </label>
+            <select class = "form-control form-control-sm" id="faculty" name="Satisfied" onchange="displayDivDemo('hideValuesOnSelect', this)" required>
+            <option value="" selected style="color:black;" hidden>Choose</option>
+            <option value="Excellent" style="color:black;">Excellent</option>
+            <option value="Very Good" style="color:black;">Very Good</option>
+            <option value="Good" style="color:black;">Good</option>
+            <option value="Fair" style="color:black;">Fair</option>
+            <option value="Weak" style="color:black;">Weak</option>
+          </select>
+        </div> 
+        
+       
+
+        <div class="form-group myclass">
+          <label for="perpref">Other comments to improve? (Please don't enter special character, e.g.' $ @ # ?)</label>
+          <textarea id="wpref" name="Comments" class="form-control form-control-sm" placeholder="Write your answer ..." rows="8"></textarea>
+        </div>
+
+        <div class="text-center">
+         <input type="submit" name="submit" value="submit" class="btn btn-primary px-5 btn-red" id="7mada">
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+    // Initialize Select2 with custom configuration
+    $(document).ready(function () {
+      $('#searchable-dropdown').select2({
+        placeholder: "Select an option",
+        allowClear: true,
+        minimumResultsForSearch: 0, // Always show search box
+      });
+
+      // Ensure all matching results appear in the dropdown
+      $('#searchable-dropdown').on('select2:open', function () {
+        document.querySelector('.select2-search__field').focus(); // Focus on the search box when opened
+      });
+    });
+  </script>
+  <!--<script src="members.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
